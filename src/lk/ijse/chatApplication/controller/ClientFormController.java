@@ -182,4 +182,8 @@ public class ClientFormController  extends  Thread{
         this.filePath = fileChooser.showOpenDialog(stage);
         writer.println(lblClientName.getText() + " " + "img" + filePath.getPath());
     }
+
+    public void closeOnAction(ActionEvent actionEvent) {
+        System.exit(0);
+    }
 }
